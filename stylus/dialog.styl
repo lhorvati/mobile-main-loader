@@ -1,0 +1,125 @@
+/* DIALOG STYL ======================================= */
+
+
+/* Dialog Overlay */
+.dialog-overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 100
+	background: rgba(0, 0, 0, 0.4)
+	flexbox()
+	justify-content: center
+	align-items: center
+	
+
+	/* Dialog Wrapper ======================= */
+	.dialog-wrapper
+		width: calc(100% - 80px)
+		min-height: 100px
+		background: color3
+		box-shadow(shadowLvl5)
+		flexbox()
+		flex-flow: column nowrap
+		
+
+		/* Input overwrite */
+		input
+			margin-top: 25px
+
+
+		.dialog-header,
+		.dialog-content,
+		.dialog-footer
+			box-sizing()
+			color: color4
+			flexbox()
+			align-content: center
+			
+
+		/* Dialog Header */
+		.dialog-header
+			padding: 24px 24px 0 24px
+			font-size: fontSize4
+
+
+		/* Dialog Content */
+		.dialog-content
+			padding: 0 24px
+			margin-top: 20px
+
+
+
+		/* Dialog Content */
+		.dialog-footer
+			height: 52px
+			margin-top: 24px
+			padding: 8px
+			justify-content: flex-end
+
+
+
+
+
+
+/* SHARE DIALOG ======================================= */
+
+.hidden
+	display: none
+
+.share-wrap
+
+	.dialog-wrapper
+		width: calc(100% - 32px)
+
+		/* Input overwrite */
+		input
+			margin-top: 0
+
+		.dialog-content
+			flex-flow: column nowrap
+
+.share-link
+
+	.share-link__button
+		flexbox()
+		flex-flow: row nowrap
+		align-items: center
+
+		.share-link__button--icon
+			margin-left: 10px
+			width: 20px
+			height: 20px
+			background: red
+
+	
+.invite-people
+	flexbox()
+	flex-flow: column nowrap
+
+	label
+		color: color4
+		font-size: 11px
+		font-weight: 300
+		letter-spacing: 0.2px
+
+	input
+		font-size: 14px
+		padding: 10px 10px 10px 5px
+		box-sizing()
+		display: block
+		width: 100%
+		border: none
+		border-bottom: 1px solid color13
+
+	.bar
+		width: 100%
+		height: 1px
+		background: color4
+
+
+
+
+			
