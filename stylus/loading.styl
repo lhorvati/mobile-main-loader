@@ -17,7 +17,9 @@
     opacity: 1 !important
 
 
-.loading-screen-wrap
+.loading-screen-wrap,
+.loading-screen-wrap .loading-logo-wrap,
+.loading-screen-wrap .loading-ring-wrap
     position: absolute
     top: 0
     bottom: 0
@@ -28,24 +30,35 @@
     flexbox()
     justify-content: center
     align-items: center
+
+.loading-screen-wrap
     background: color11
 
-    /* CA Logo */
-    .loading-logo
+.loading-screen-wrap .loading-logo-wrap
+    opacity: 1
+    z-index: 1
+
+.loading-screen-wrap .loading-ring-wrap
+    opacity: 0
+    z-index: 2
+
+
+
+/* CA Logo */
+.loading-screen-wrap .loading-logo
+    width: 100%
+    max-width: 260px
+    position: relative
+
+    img
         width: 100%
-        max-width: 260px
-        position: absolute
-        opacity: 1
 
-        img
-            width: 100%
-
-    .loading-ring
-        flexbox()
-        justify-content: center
-        align-items: center
-        position: absolute
-        opacity: 0
+/* Loading ring */
+.loading-screen-wrap .loading-ring
+    flexbox()
+    justify-content: center
+    align-items: center
+    position: relative
 
 
 

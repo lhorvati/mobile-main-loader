@@ -451,7 +451,9 @@ img {
   -o-transition: opacity 1.2s ease-in-out;
   opacity: 1 !important;
 }
-.loading-screen-wrap {
+.loading-screen-wrap,
+.loading-screen-wrap .loading-logo-wrap,
+.loading-screen-wrap .loading-ring-wrap {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -466,14 +468,22 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.loading-screen-wrap {
   background: #222;
-/* CA Logo */
+}
+.loading-screen-wrap .loading-logo-wrap {
+  opacity: 1;
+  z-index: 1;
+}
+.loading-screen-wrap .loading-ring-wrap {
+  opacity: 0;
+  z-index: 2;
 }
 .loading-screen-wrap .loading-logo {
   width: 100%;
   max-width: 260px;
-  position: absolute;
-  opacity: 1;
+  position: relative;
 }
 .loading-screen-wrap .loading-logo img {
   width: 100%;
@@ -486,8 +496,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  opacity: 0;
+  position: relative;
 }
 .loading-ring-loader {
   position: relative;
