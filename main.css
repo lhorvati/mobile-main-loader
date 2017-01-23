@@ -473,7 +473,7 @@ img {
   background: #222;
 }
 .loading-screen-wrap .loading-logo-wrap {
-  opacity: 1;
+  opacity: 0;
   z-index: 1;
 }
 .loading-screen-wrap .loading-ring-wrap {
@@ -507,14 +507,13 @@ img {
 .loading-ring-loader:before {
   content: '';
   display: block;
-  padding-top: 100%;
 }
 .circular {
   animation: rotate 2s linear infinite;
   height: 100%;
   transform-origin: center center;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
